@@ -1,0 +1,20 @@
+package »Î√≈ ‘ ‘;
+
+public class abc {
+	
+public static void main(String[] args)
+{
+	int b=10;
+System.out.println("hello");	
+
+
+System.out.println("a");
+new a12();
+System.out.println(a12());
+}
+
+
+	
+	
+	
+}

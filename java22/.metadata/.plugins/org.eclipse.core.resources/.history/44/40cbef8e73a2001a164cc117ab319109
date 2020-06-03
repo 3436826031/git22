@@ -1,0 +1,39 @@
+package  ‰»Î”Î ‰≥ˆ;
+
+import java.io.File;
+
+public class À—À˜ {
+
+ 
+ public static void main(String[] args) {
+	 File wj=new File("E:\\File"); 
+		dg(wj);
+	 
+}
+		
+
+
+public static void dg(File wj2) {
+	
+
+	for(File A:wj2.listFiles()) {
+		
+		if(A.isDirectory()) {
+			
+			gd(A);
+			
+		}
+		
+		else {
+			
+			System.out.println(A);
+		}
+		
+
+	}
+	
+	
+	
+}
+}
+

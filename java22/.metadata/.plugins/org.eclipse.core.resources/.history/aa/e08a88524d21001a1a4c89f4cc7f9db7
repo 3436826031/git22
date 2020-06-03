@@ -1,0 +1,57 @@
+package 入门试试;
+
+public class 入门2 {
+
+
+public static void main(String[] args)
+{
+	
+boolean a=(1==3);//布尔
+System.out.println("布尔"+a);
+
+byte b=11;
+System.out.println("byte"+b);
+
+
+String c="hello";//字符串
+System.out.println("字符串"+c);
+
+
+
+int[]sz=new int[5];//数组
+int[]sz2={1,2,3,4,5};
+sz[0]=1;
+sz[1]=2;
+
+//类型[]名称=new 类型[数量]
+System.out.println("数组"+sz[0]);
+/*for(int i=0;i<5;i++ ){
+	System.out.println(sz2[i]);
+}*/
+final int ac=2;
+ac=ac+1;
+System.out.println("静态"+ac);
+
+
+
+//对象.length是取长度
+for(int i=0;i<sz2.length;i++ ){
+	System.out.println("数组"+sz2[i]);
+
+
+	System.out.println("有"+args.length+"个参数");
+	
+}
+
+
+}
+
+ public class abc{
+
+	
+	
+}
+	
+	
+
+}

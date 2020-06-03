@@ -1,0 +1,50 @@
+package 输入与输出;
+
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.util.Arrays;
+
+import com.sun.tools.javac.code.Attribute.Array;
+
+public class IO输入 {
+	/*
+	           类 FilterInputStream
+	 -----int read() 读取单个字符            ---------------------
+	 -----int read(byte[])将字符多个字符---------------------
+	 
+	          构造方法
+	       FileInputStream(File file) 
+           FileInputStream(String name) 
+
+	 */
+	
+	
+	public static void main(String[] args) throws IOException {
+		FileInputStream dur = new FileInputStream("E:\\File\\读取.txt");
+		//FileOutputStream xie=new FileOutputStream("E:\\File\\读取.txt");
+		FileInputStream dur2 = new FileInputStream("E:\\File\\读取2.txt");
+		byte[] B=new byte[3];//多字节读取
+		
+		int B2=dur2.read(B);//这里只会输出数组的个数
+	   System.out.println(B2);
+	   System.out.println(Arrays.toString(B2));
+	   
+	  
+		System.out.println("-------------------");
+		
+          int A = 0;
+	      while(true) {
+		  if((A=dur.read())!=-1) {
+			  System.out.println((char)A);    
+		  }  
+	  }
+	     
+	      
+	      
+	      
+	      
+	      
+	}
+}

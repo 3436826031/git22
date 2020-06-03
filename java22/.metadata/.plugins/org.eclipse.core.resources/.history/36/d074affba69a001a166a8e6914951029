@@ -1,0 +1,33 @@
+package 集合;
+
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Iterator;
+
+/*遍历集合的方法 
+  1.把集合转化为数组Object 然后将素组遍历
+  2.使用迭代器
+*
+*
+*/
+public class 迭代器 {
+	
+	
+	
+	public static void main(String args[]) {	
+		
+		
+		Collection A=new ArrayList();
+		
+		A.add("1");
+		A.add("2");
+		A.add("3");
+		A.add("4");
+		
+		Iterator dd=A.iterator();//创建迭代器对象
+		
+		System.out.println(dd.next());
+	
+
+}
+}

@@ -1,0 +1,14 @@
+package 输入与输出;
+
+import java.io.FileInputStream;
+import java.io.IOException;
+
+public class aaaa {
+	public static void main(String[] args) throws IOException
+	{
+		FileInputStream fis=new FileInputStream("C:\\Users\\DELL\\Desktop\\网页作业--魏立\\img\\读取.txt");
+	
+
+		System.out.println((fis.read());}
+	
+}

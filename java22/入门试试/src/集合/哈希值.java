@@ -1,0 +1,8 @@
+package ¼¯ºÏ;
+
+public class ¹þÏ£Öµ extends Object {
+	
+	
+
+	
+}

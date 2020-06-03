@@ -1,0 +1,16 @@
+package 集合;
+
+public class 测试哈希值 {
+
+	
+	
+
+	public static void main(String[] args) {
+		
+	哈希值 p1=new 哈希值();
+	int a=p1.hashCode();
+	System.out.println(a);
+
+	}
+	
+}

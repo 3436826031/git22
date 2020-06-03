@@ -1,0 +1,46 @@
+package 集合;
+
+import java.util.HashSet;
+import java.util.Iterator;
+import java.util.Set;
+
+public class Set集合 {
+	/*Set集合的特点
+	 * 不能储存重复的
+	 * 没有索引,所以也不适用for循环来遍历。
+	 * 底层是个哈希表
+	 * HashSet类实现了Set接口
+	 * 
+	 * */
+	
+	public static void main(String args[]) {	
+		
+		
+		Set<Integer> set=new HashSet<>();
+		
+		set.add(1);
+		set.add(3);
+		set.add(2);
+		set.add(1);
+		
+		//没有索引，所以只能迭代器和增强for
+		
+		Iterator<Integer> dd=set.iterator();
+		
+		while(dd.hasNext()) {
+			
+			System.out.println(dd.next());
+			
+			
+			
+		}
+				
+		
+		
+	}
+	
+	
+	
+	
+
+}

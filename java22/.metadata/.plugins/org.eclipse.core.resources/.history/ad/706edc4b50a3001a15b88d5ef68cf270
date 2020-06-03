@@ -1,0 +1,27 @@
+package 输入与输出;
+
+import java.io.FileWriter;
+import java.io.IOException;
+
+public class 字符流写入 {
+	
+	//Writer
+	
+	public static void main(String[] args) throws IOException {
+		FileWriter xr=new FileWriter("E:\\File\\字符写入.txt");
+		
+		xr.write(97);//还是ASCII表写入
+		
+		xr.write("你好");
+		
+		xr.flush();//刷新到存档点
+		
+		
+		
+		
+		
+	}
+	
+	
+
+}

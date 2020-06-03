@@ -1,0 +1,32 @@
+package 输入与输出;
+
+import java.io.File;
+
+public class 递归目录 {
+	// - public boolean isFile() :此File表示的是否为文件。
+	
+	
+	public static void main(String[] args) {
+		
+		File wj =new File("E:\\File");
+		getALLFiLe(wj)
+		
+
+		
+	}
+	
+
+	private static void getALLFiLe(File wj) {
+
+for(File wj2:wj.listFiles()) {
+	
+	System.out.println(wj2);
+}
+		
+		
+	}
+	
+	
+	
+
+}

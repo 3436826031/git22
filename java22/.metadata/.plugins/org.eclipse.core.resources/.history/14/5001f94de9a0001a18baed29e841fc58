@@ -1,0 +1,42 @@
+package 输入与输出;
+/*
+ * 递归就是自己调用自己
+ * 
+ * main（）{
+ * a();
+ * }
+ * 
+ * a(){
+ * a()
+ * }
+ * 
+ * 
+ * 
+ * 
+ * */
+
+//计算1--n
+public class 递归 {
+	
+	public static void main(String[] args)  {
+		
+		sum(3);
+		System.out.println(sum(3));
+		
+	}
+
+	private static int sum(int i) {
+		
+		if(i==1) {
+			return 1;
+	
+		}
+		
+		return i + sum(i-1);
+		
+		
+		
+	}
+		
+
+}

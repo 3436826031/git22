@@ -1,0 +1,32 @@
+package 输入与输出;
+
+import java.io.File;
+/*
+ * File类获取功能的方法
+-  public String getAbsolutePath() :返回此File的绝对路径名字符串。
+一  public String getPath() :将此File转换为路径名字符串。
+一  public String getName() :返回由此File表示的文件或目录的名称。
+-  public long length() :返回由此File表示的文件的长度。
+
+ * 
+ * */
+//方法FileWrite
+//write
+
+
+public class 输入 {
+	
+	public static void main(String[] args) {
+		
+	
+	File xr=new File("E://ces.txt");
+	File xr2=new File("ces.txt");
+System.out.println(xr.getAbsolutePath());
+System.out.println(xr.getName());
+System.out.println(xr.length());
+System.out.println(xr2.getAbsolutePath());
+	
+	
+	}
+
+}

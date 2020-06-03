@@ -1,0 +1,69 @@
+package 输入与输出;
+/*
+ * 
+ * 
+ * 此抽象类是表示输出字节流的所有类的超类
+ * 
+ * 定义一些子类的共性的成员方法
+ * public void close（）：关闭此输出流并释放相关联的任何系统资源
+ * public void flush() 刷新此输出流幷强制任何缓冲的输出字节被写出
+ * public void write 将b ，length 字节从指定的字节流组写入输出流
+ * public void write 从指定的字节数组写入了呢字节 从偏移量 off 开始输出到此输出结束
+ * public void write 将指定的字节输出流 
+ * 
+ * 
+ * 作用 吧内存中的数据写入到硬盘的文件中
+ * 构造方法：fileOutputStream 创建一个向具有指定名称的文件中写入数据的输出文件流
+ * File Out普通stream 创建一个向指定File 对象表示的文件中写入数据的文件输出流
+ * 
+ * 
+ * 
+ * */
+
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
+
+public class IO流 {
+	
+	public static void main(String[] args) throws IOException {
+
+	FileOutputStream sc=new FileOutputStream("E:\\File\\sc.txt");
+
+	
+	sc.write(49);//输出的不是数字而是AcsII表，所以只有一个字节，将字节转化为2进制储存在内存中，在记事本打开时将二进制转化为ACSII
+	//write方法只能写出一个字节
+	
+	/*public void write （byte[] b） 将b。length字节从指定的字节数组写入此输出流
+	 * 一次写多个字节
+	 * 如果写的第一个字节是正数 那么显示的时候查询AScII表
+	 * 如果是负数 那么第一个字节和第二个字节，两字节组成一个中文显示查询系统默认码表（GBK）
+	*/
+	FileOutputStream sc2=new FileOutputStream("E:\\File\\sc2.txt");
+	byte[] sz={65,66,67,68};
+	byte[] sz2={-65,66,-67,68};
+	
+	
+	sc2.write(sz);
+	sc2.write(sz2);
+	/*
+	 * public void write(byte[] b, int off,init len)=====write(字节数组，数组的开始索引，写入几个字节)
+	 * 将字节数组的一部分写入到文件中
+	 * 
+	 * */
+	
+	
+	//如何将字符串写入文件
+	//字符串有方法可以转换为字节数组getbytes()
+	
+	String zf=new String("你好");
+	
+	byte[] sz3=zf.getBytes();
+	sc2.write(sz3);
+	
+	
+	}
+	
+	
+	
+}

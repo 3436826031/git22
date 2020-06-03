@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="在“入门试试.问.main()”中内联局部变量“入门试试.问.main().dax”&#x0D;&#x0A;－ 原始项目：“入门试试”&#x0D;&#x0A;－ 原始元素：“入门试试.问.main().dax”" description="内联局部变量“dax”" id="org.eclipse.jdt.ui.inline.temp" input="/src&lt;入门试试{问.java" selection="171 13" stamp="1577111698304" version="1.0"/>
+</session>

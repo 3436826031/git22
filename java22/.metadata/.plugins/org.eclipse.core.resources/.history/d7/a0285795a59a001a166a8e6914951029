@@ -1,0 +1,29 @@
+package ¼¯ºÏ;
+
+import java.util.ArrayList;
+
+public class ces2 {
+	
+	public static void main(String args[]) {	
+	
+	
+	ArrayList A=new ArrayList();
+
+	
+	
+	
+	A.add("1");
+	A.add("2");
+	A.add("3");
+	 System.out.println(A);
+	
+	 for(int i=0;i<A.size();i++) {
+		 
+		 System.out.println(A.get(i));
+		 
+	 }
+	 
+	
+	}
+
+}

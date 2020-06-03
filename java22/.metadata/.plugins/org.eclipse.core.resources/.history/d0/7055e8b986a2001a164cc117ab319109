@@ -1,0 +1,36 @@
+package 输入与输出;
+
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
+
+public class IO输入 {
+	/*
+	           类 FilterInputStream
+	       int read() 读取单个字符
+	       int read(byte[])将字符多个字符
+	          构造方法
+	       FileInputStream(File file) 
+           FileInputStream(String name) 
+
+	 */
+	
+	
+	public static void main(String[] args) throws IOException {
+		FileInputStream dur = new FileInputStream("E:\\File\\读取.txt");
+		//FileOutputStream xie=new FileOutputStream("E:\\File\\读取.txt");
+		
+          int A = 0;
+	      while(true) {
+		  if((A = dur.read())!=-1)
+		  System.out.println((char)dur.read()+"  "); 
+		  
+		  
+	  }
+	  
+
+	  
+		
+	}
+}

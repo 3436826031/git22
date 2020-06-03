@@ -1,0 +1,23 @@
+package ¼¯ºÏ;
+
+import java.util.ArrayList;
+
+public class ces2 {
+	
+	public static void main(String args[]) {	
+	
+	
+	ArrayList A=new ArrayList();
+
+	
+	
+	
+	A.add("1212");
+	A.add("12121");
+	A.add("3");
+	 System.out.println(A);
+	
+	
+	}
+
+}
